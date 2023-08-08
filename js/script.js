@@ -4,7 +4,7 @@ var sliderSelector = '.swiper-container',
       init: false,
       loop: true,
       speed:800,
-      slidesPerView: auto, // or 'auto'
+      slidesPerView: 1, // or 'auto'
        spaceBetween: 30,
       centeredSlides : true,
       effect: 'coverflow', // 'cube', 'fade', 'coverflow',
