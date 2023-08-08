@@ -85,17 +85,17 @@ body {
 .panel.active > *:last-child { transform: translateY(0); }
 
 .panel.one {
-  background: #FDFFFF url('../img/Nikita.png');
+  background: #FDFFFF url('../img/BPLA.png');
   background-position: -100px 0;
 }
 
 .panel.two {
-  background: #7B287D url('../img/Nikita.png');
+  background: #7B287D url('../img/TSP.png');
   background-position: center;
 }
 
 .panel.three {
-  background: #D2FF28 url('../img/Nikita.png');
+  background: #D2FF28 url('../img/TakMed.png');
   background-position: center;
 }
 
