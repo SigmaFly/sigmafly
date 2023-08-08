@@ -1,6 +1,6 @@
 const panels = document.querySelectorAll('.panel');
 
-function togglePanel(e) {
+function togglePanel() {
   const delay = 300;
   let isOpen = this.classList.contains('open');
 

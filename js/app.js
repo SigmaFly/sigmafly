@@ -29,4 +29,3 @@ function togglePanel() {
 
 panelsinnapravlenia.forEach(panel => panel.addEventListener('click', togglePanel));
 
-
