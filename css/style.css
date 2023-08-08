@@ -64,11 +64,11 @@
 }
 
 .swiper-button-prev {
-  transform: translateX(50px);
+  transform: translateX(100px);
 }
 
 .swiper-button-next {
-  transform: translateX(-50px);
+  transform: translateX(-100px);
 }
 
 
