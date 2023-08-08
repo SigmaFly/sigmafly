@@ -99,7 +99,7 @@
   border-width: 1px;
 }
 
-@media (max-width: 1180px) {
+@media (max-width: 1240px) {
   .swiper-slide .content .title {
     font-size: 25px;
   }
@@ -107,7 +107,7 @@
     font-size: 12px;
   }
 }
-@media (max-width: 1023px) {
+@media (max-width: 1240px) {
   .swiper-container {
     height: 40vw;
   }
