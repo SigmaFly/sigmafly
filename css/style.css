@@ -39,7 +39,7 @@
   display: none;
 }
 .swiper-slide .content {
-  position: absolute;
+  position: relative;
   top: 40%;
   left: 0;
   width: 50%;
