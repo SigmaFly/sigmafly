@@ -1,6 +1,5 @@
 .swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet::before, .swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet, [class^=swiper-button-] {
-  transition: all 0.3s ease;
-  transform: translateX(0);
+  transition: all 0.5s ease;
 }
 
 *, *:before, *:after {
