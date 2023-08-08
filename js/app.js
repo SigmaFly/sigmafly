@@ -8,6 +8,7 @@ ScrollSmoother.create({
   content: '.content'
 });
 
+// Объявляем переменную panelsinnapravlenia только один раз перед использованием
 const panelsinnapravlenia = document.querySelectorAll('.panel');
 
 function togglePanel() {
