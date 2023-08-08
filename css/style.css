@@ -33,16 +33,16 @@
 .swiper-slide {
   background-position: center;
   background-size: cover;
-	position: relative;
+	position: absolute;
 }
 .swiper-slide .entity-img {
   display: none;
 }
 .swiper-slide .content {
-  position: relative;
+  position: absolute;
   top: 40%;
   left: 0;
-  width: 50%;
+  width: 100%;
   padding-left: 5%;
   color: #fff;
 }
