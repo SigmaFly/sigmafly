@@ -7,7 +7,7 @@ ScrollSmoother.create({
   content: '.content'
 });
 
-const panels = document.querySelectorAll('.panel');
+const panelsinnapravlenia = document.querySelectorAll('.panel');
 
 function togglePanel() {
   console.log('Panel clicked');
