@@ -1,5 +1,6 @@
 .swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet::before, .swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet, [class^=swiper-button-] {
   transition: all 0.3s ease;
+  transform: translateX(0);
 }
 
 *, *:before, *:after {
@@ -9,7 +10,7 @@
 }
 
 .swiper-container {
-	display: flex;
+  display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
@@ -25,7 +26,7 @@
 }
 .swiper-container:hover .swiper-button-prev,
 .swiper-container:hover .swiper-button-next {
-  transform: translateX(50);
+  transform: translateX(0);
   opacity: 1;
   visibility: visible;
 }
@@ -64,11 +65,11 @@
 }
 
 .swiper-button-prev {
-  transform: translateX(100px);
+  transform: translateX(50px);
 }
 
 .swiper-button-next {
-  transform: translateX(-100px);
+  transform: translateX(-50px);
 }
 
 
