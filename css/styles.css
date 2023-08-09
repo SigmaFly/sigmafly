@@ -109,7 +109,7 @@ body {
   background-position: center;
 }
 
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 1125px) {
   .panel.open .highlight { font-size: 30px; }
   .panel .sm-highlight { display: flex; }
   .panel .highlight.developer { display: none; }
@@ -127,7 +127,7 @@ body {
   .panel .details .item { margin: 3px 0; }
 }
 
-@media screen and (max-width: 300px) and (max-height: 500px){
+@media screen and (max-width: 250px) and (max-height: 500px){
   .panel.one {
     background: #463785 url('/img/BPLA.png');
   }
