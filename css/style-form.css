@@ -91,15 +91,15 @@ header {
 
 #form {
   position: relative;
-  width: 500px;
+  width: 300px;
   margin: 50px auto 100px auto;
 }
 
 input {
   font-family: 'Lato', sans-serif;
   font-size: 0.875em;
-  width: 470px;
-  height: 50px;
+  width: 270px;
+  height: 25px;
   padding: 0px 15px 0px 15px;
   
   background: transparent;
@@ -148,7 +148,7 @@ textarea:hover {
 }
 
 #submit {
-  width: 470px;
+  width: 270px;
   
   padding: 0;
   margin: -5px 0px 0px 0px;
