@@ -90,9 +90,9 @@ body {
 	letter-spacing: calc(var(--index) / 1.5);
 }
 .layers__caption {
-	font-size: calc(var(--index) / 0.75);
-	letter-spacing: calc(var(--index) / 3.5);
-	margin-top: calc(var(--index) * -10);
+	font-size: calc(var(--index) / 0.5);
+	letter-spacing: calc(var(--index) / 2.5);
+	margin-top: calc(var(--index) * -80);
 }
 .main-article {
 	--main-article-transform: translate3d(0, calc(var(--scrollTop) / -7.5), 0);
