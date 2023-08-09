@@ -74,7 +74,7 @@ body {
 }
 .layer__header {
 	z-index:3;
-	top: -100px;
+	top: -500px;
 	transform: translate3d(0, calc(var(--scrollTop) / 2), 0);
 	transition: var(--transition);
 	will-change: transform;
