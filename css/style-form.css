@@ -99,7 +99,7 @@ input {
   font-family: 'Lato', sans-serif;
   font-size: 0.875em;
   width: 270px;
-  height: 25px;
+  height: 20px;
   padding: 0px 15px 0px 15px;
   
   background: transparent;
@@ -123,8 +123,8 @@ input:hover {
 textarea {
   width: 270px;
   max-width: 270px;
-  height: 25px;
-  max-height: 55px;
+  height: 20px;
+  max-height: 25px;
   padding: 15px;
   
   background: transparent;
