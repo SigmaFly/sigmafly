@@ -127,7 +127,7 @@ body {
   .panel .details .item { margin: 3px 0; }
 }
 
-@media screen and (max-width: 780px) and (max-height: 500px){
+@media screen and (max-width: 300px) and (max-height: 500px){
   .panel.one {
     background: #463785 url('/img/BPLA.png');
   }
