@@ -90,7 +90,7 @@ body {
 	letter-spacing: calc(var(--index) / 1.5);
 }
 .layers__caption {
-	font-size: calc(var(--index) / 1.175);
+	font-size: calc(var(--index) / 0.75);
 	letter-spacing: calc(var(--index) / 3.5);
 	margin-top: calc(var(--index) * -10);
 }
