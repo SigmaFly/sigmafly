@@ -182,7 +182,7 @@ body {
 
 /* pc desktop*/
 }
-@media (min-width: 769px) and (max-width: 1024px) {
+@media (min-width: 769px) {
 * {
 	margin: 0;
 	padding: 0;
