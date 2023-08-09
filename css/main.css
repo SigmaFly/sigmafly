@@ -81,7 +81,8 @@ body {
 	text-shadow: 0 0 15px #9d822b;
 }
 .layers__title {
-  	top: -120px;
+  	top: 0;
+	background-color: red;
 	text-align: top;
 	font-size: calc(var(--index) * 2.65);
 	letter-spacing: calc(var(--index) / 1.5);
