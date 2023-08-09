@@ -87,31 +87,31 @@ body {
 .panel.one {
   background: #FDFFFF url('../img/BPLA.png');
   background-position: -100px 0;
-  flex-basis: 20%
+  flex-basis: 10%
 }
 
 .panel.two {
   background: #7B287D url('../img/TSP.png');
   background-position: center;
-  flex-basis: 20%
+  flex-basis: 10%
 }
 
 .panel.three {
   background: #D2FF28 url('../img/TakMed.png');
   background-position: center;
-  flex-basis: 20%
+  flex-basis: 10%
 }
 
 .panel.four {
   background: #FF7F11 url('../img/Nikita.png');
   background-position: center;
-  flex-basis: 20%
+  flex-basis: 10%
 }
 
 .panel.five {
   background: #FF1B1C url('../img/Eshelonirivanie.png');
   background-position: center;
-  flex-basis: 20%
+  flex-basis: 10%
 }
 
 @media screen and (max-width: 1125px) {
