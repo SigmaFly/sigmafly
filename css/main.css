@@ -82,8 +82,7 @@ body {
 }
 .layers__title {
   	top: -1000px;
-	background-color: red;
-	text-align: top;
+	text-align: center;
 	font-size: calc(var(--index) * 2.65);
 	letter-spacing: calc(var(--index) / 1.5);
 }
