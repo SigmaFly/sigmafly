@@ -81,13 +81,13 @@ body {
 	text-shadow: 0 0 15px #9d822b;
 }
 .layers__title {
-  	top: -1000px;
+  	top: -3000px;
 	text-align: center;
 	font-size: calc(var(--index) * 2.65);
 	letter-spacing: calc(var(--index) / 1.5);
 }
 .layers__caption {
-	top: -120px;
+	top: -300px;
 	font-size: calc(var(--index) / 1.175);
 	letter-spacing: calc(var(--index) / 3.5);
 	margin-top: calc(var(--index) * -10);
