@@ -121,10 +121,10 @@ input:hover {
 }
 
 textarea {
-  width: 470px;
-  max-width: 470px;
-  height: 110px;
-  max-height: 110px;
+  width: 270px;
+  max-width: 270px;
+  height: 55px;
+  max-height: 55px;
   padding: 15px;
   
   background: transparent;
