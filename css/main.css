@@ -81,7 +81,7 @@ body {
 	text-shadow: 0 0 15px #9d822b;
 }
 .layers__title {
-  	top: 0;
+  	top: -100px;
 	background-color: red;
 	text-align: top;
 	font-size: calc(var(--index) * 2.65);
