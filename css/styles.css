@@ -1,4 +1,161 @@
+@media (max-width: 768px) {
+  * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+body {
+  color: #fff;
+}
+
+.panelsinnapravlenia {
+  height: 80vh;
+  width: 100vw;
+  overflow: hidden;
+  display: flex;
+}
+
+.panel {
+  padding: 0 10px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: flex 0.7s cubic-bezier(0.38, -0.06, 0.7, -0.11);
+  text-shadow: 1px 1px 1px #000, -1px 1px 1px #000, 1px -1px 1px #000;
+}
+
+.panel .highlight {
+  font-size: 36px;
+  text-shadow: 1px 1px 1px #000, 2px 2px 1px #000;
+  transition: font-size 0.7s cubic-bezier(0.38, -0.06, 0.7, -0.11);
+}
+
+.panel .sm-highlight {
+  display: none;
+}
+
+.panel .title {
+  flex: 3;
+  font-family: raleway_f, sans-serif;
+  font-size: 24px;
+  text-transform: uppercase;
+}
+
+.panel .details {
+  flex: 3;
+  font-family: raleway_f, sans-serif;
+  font-size: 24px;
+}
+
+.panel .details .item {
+  list-style-type: none;
+  margin: 0px 0;
+}
+
+.panel .details .item a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.panel > * {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  transition: transform .5s cubic-bezier(0.38, -0.06, 0.7, -0.11);
+}
+
+.panel:last-of-type .details {
+  text-align: center;
+}
+
+.panel.open {
+  flex: 5;
+}
+
+.panel.open .highlight {
+  font-size: 44px;
+}
+
+.panel > *:first-child { transform: translateY(-300px); }
+.panel.active > *:first-child { transform: translateY(0); }
+.panel > *:last-child { transform: translateY(300px); }
+.panel.active > *:last-child { transform: translateY(0); }
+
+.panel.one {
+  background: #FDFFFF url('../img/BPLA.png');
+  background-position: -100px 0;
+}
+
+.panel.two {
+  background: #7B287D url('../img/TSP.png');
+  background-position: center;
+}
+
+.panel.three {
+  background: #D2FF28 url('../img/TakMed.png');
+  background-position: center;
+}
+
+.panel.four {
+  background: #FF7F11 url('../img/Nikita.png');
+  background-position: center;
+}
+
+.panel.five {
+  background: #FF1B1C url('../img/Eshelonirivanie.png');
+  background-position: center;
+}
+
+@media screen and (max-width: 1080px) {
+  .panel.open .highlight { font-size: 30px; }
+  .panel .sm-highlight { display: flex; }
+  .panel .highlight.developer { display: none; }
+  .panel .highlight {
+    font-size: 18px;
+    transition: font-size .7s cubic-bezier(0.38, -0.06, 0.7, -0.11);
+  }
+
+  .panel .title,
+  .panel .details {
+    font-size: 12px;
+    transition: transform .7s cubic-bezier(0.38, -0.06, 0.7, -0.11);
+  }
+
+  .panel .details .item { margin: 3px 0; }
+}
+
+@media screen and (max-width: 780px) and (max-height: 500px){
+  .panel.one {
+    background: #463785 url('/img/BPLA.png');
+  }
+
+  .panel.two {
+    background: #124559 url('/img/TSP.png');
+    background-position: center;
+  }
+
+  .panel.three {
+    background: #4A1942 url('/img/TakMed.png');
+    background-position: center;
+  }
+
+  .panel.four {
+    background: #598392 url('/img/Nikita.png');
+  }
+
+  .panel.five {
+    background: #893168 url('/img/Eshelonirivanie.png');
+    background-position: center;
+  }
+}
+ /*   */
+}
+
+
+@media (min-width: 769px) and (max-width: 2048px) {
 * {
   margin: 0;
   padding: 0;
@@ -152,4 +309,5 @@ body {
   }
 }
  /*   */
+}
 
