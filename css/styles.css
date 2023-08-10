@@ -11,7 +11,7 @@ body {
 
 .panelsinnapravlenia {
   height: 100vh; /* Полная высота экрана */
-  width: 100vw; /* Фиксированная ширина для вертикального слайдера */
+  width: 100%; /* Фиксированная ширина для вертикального слайдера */
   overflow: hidden;
   display: flex;
   flex-direction: column; /* Ориентация вертикального слайдера */
@@ -113,7 +113,7 @@ body {
   background-position: center;
 }
 
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 1125px) {
   .panel.open .highlight { font-size: 10px; }
   .panel .sm-highlight { display: flex; }
   .panel .highlight.developer { display: none; }
@@ -159,7 +159,7 @@ body {
 }
 
 
-@media (min-width: 1126px) and (max-width: 2048px) {
+@media (min-width: 1126px) {
 * {
   margin: 0;
   padding: 0;
