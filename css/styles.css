@@ -26,7 +26,7 @@ body {
   justify-content: center; /* Добавил выравнивание по центру */
   transition: flex 0.7s cubic-bezier(0.38, -0.06, 0.7, -0.11);
   text-shadow: 1px 1px 1px #000, -1px 1px 1px #000, 1px -1px 1px #000;
-  transform: translateY(100%); /* Начальное положение за экраном */
+  transform: translateX(100%); /* Начальное положение за экраном */
 }
 
 .panel .highlight {
@@ -76,17 +76,17 @@ body {
 
 .panel.open {
   flex: 5;
-  transform: translateY(0); /* Положение панели во время открытия */
+  transform: translateX(0); /* Положение панели во время открытия */
 }
 
 .panel.open .highlight {
   font-size: 14px;
 }
 
-.panel > *:first-child { transform: translateY(-300px); }
-.panel.active > *:first-child { transform: translateY(0); }
-.panel > *:last-child { transform: translateY(300px); }
-.panel.active > *:last-child { transform: translateY(0); }
+.panel > *:first-child { transform: translateX(-300px); }
+.panel.active > *:first-child { transform: translateX(0); }
+.panel > *:last-child { transform: translateX(300px); }
+.panel.active > *:last-child { transform: translateX(0); }
 
 .panel.one {
   background: #FDFFFF url('../img/Nikita.png');
