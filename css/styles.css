@@ -23,7 +23,7 @@ body {
   display: flex;
   flex-direction: row; /* Ориентация горизонтального слайдера */
   transform: rotate(-90deg); /* Поворот на 90 градусов против часовой стрелки */
-  transform-origin: center; /* Изменение точки поворота */
+  transform-origin: top left; /* Изменение точки поворота */
 }
 
 .panel {
@@ -41,6 +41,7 @@ body {
   font-size: 36px;
   text-shadow: 1px 1px 1px #000, 2px 2px 1px #000;
   transition: font-size 0.7s cubic-bezier(0.38, -0.06, 0.7, -0.11);
+  writing-mode: vertical-rl; /* Поворот текста на 90 градусов */
 }
 
 .panel .sm-highlight {
@@ -51,11 +52,13 @@ body {
   font-family: raleway_f, sans-serif;
   font-size: 24px;
   text-transform: uppercase;
+  writing-mode: vertical-rl; /* Поворот текста на 90 градусов */
 }
 
 .panel .details {
   font-family: raleway_f, sans-serif;
   font-size: 24px;
+  writing-mode: vertical-rl; /* Поворот текста на 90 градусов */
 }
 
 .panel .details .item {
@@ -117,7 +120,7 @@ body {
   background-position: center;
 }
 
-@media screen and (max-width: 1125px) {
+@media screen and (max-width: 1080px) {
   .panel.open .highlight { font-size: 30px; }
   .panel .sm-highlight { display: flex; }
   .panel .highlight.developer { display: none; }
@@ -159,6 +162,7 @@ body {
     background-position: center;
   }
 }
+
 }
 
 
