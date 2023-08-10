@@ -27,7 +27,7 @@ body {
 }
 
 .panel .highlight {
-  font-size: 36px;
+  font-size: 6px;
   text-shadow: 1px 1px 1px #000, 2px 2px 1px #000;
   transition: font-size 0.7s cubic-bezier(0.38, -0.06, 0.7, -0.11);
 }
@@ -39,14 +39,14 @@ body {
 .panel .title {
   flex: 3;
   font-family: raleway_f, sans-serif;
-  font-size: 24px;
+  font-size: 4px;
   text-transform: uppercase;
 }
 
 .panel .details {
   flex: 3;
   font-family: raleway_f, sans-serif;
-  font-size: 24px;
+  font-size: 4px;
 }
 
 .panel .details .item {
@@ -76,7 +76,7 @@ body {
 }
 
 .panel.open .highlight {
-  font-size: 44px;
+  font-size: 14px;
 }
 
 .panel > *:first-child { transform: translateY(-300px); }
@@ -110,11 +110,11 @@ body {
 }
 
 @media screen and (max-width: 1080px) {
-  .panel.open .highlight { font-size: 30px; }
+  .panel.open .highlight { font-size: 10px; }
   .panel .sm-highlight { display: flex; }
   .panel .highlight.developer { display: none; }
   .panel .highlight {
-    font-size: 18px;
+    font-size: 8px;
     transition: font-size .7s cubic-bezier(0.38, -0.06, 0.7, -0.11);
   }
 
