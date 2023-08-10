@@ -17,9 +17,9 @@ body {
 .panelsinnapravlenia {
   width: 100vh;
   height: 100vw;
+  overflow: hidden;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  flex-direction: column;
   transform: rotate(-90deg);
   transform-origin: center center;
 }
@@ -33,16 +33,14 @@ body {
   justify-content: center;
   transition: flex 0.7s cubic-bezier(0.38, -0.06, 0.7, -0.11);
   text-shadow: 1px 1px 1px #000, -1px 1px 1px #000, 1px -1px 1px #000;
-  transform: translateY(-100%);
-  width: 100%; /* Каждая панель занимает 100% ширины экрана */
-  height: 20vh; /* Каждая панель занимает 20% высоты экрана */
+  width: 100%;
+  height: 20vh; /* Каждая панель занимает 20% высоты свайпера */
 }
 
 .panel .highlight {
   font-size: 36px;
   text-shadow: 1px 1px 1px #000, 2px 2px 1px #000;
   transition: font-size 0.7s cubic-bezier(0.38, -0.06, 0.7, -0.11);
-  writing-mode: horizontal-tb;
 }
 
 .panel .sm-highlight {
@@ -53,13 +51,11 @@ body {
   font-family: raleway_f, sans-serif;
   font-size: 24px;
   text-transform: uppercase;
-  writing-mode: horizontal-tb;
 }
 
 .panel .details {
   font-family: raleway_f, sans-serif;
   font-size: 24px;
-  writing-mode: horizontal-tb;
 }
 
 .panel .details .item {
@@ -92,10 +88,10 @@ body {
   font-size: 44px;
 }
 
-.panel > *:first-child { transform: translateX(-300px); }
-.panel.active > *:first-child { transform: translateX(0); }
-.panel > *:last-child { transform: translateX(300px); }
-.panel.active > *:last-child { transform: translateX(0); }
+.panel > *:first-child { transform: translateY(-300px); }
+.panel.active > *:first-child { transform: translateY(0); }
+.panel > *:last-child { transform: translateY(300px); }
+.panel.active > *:last-child { transform: translateY(0); }
 
 .panel.one {
   background: #FDFFFF url('../img/BPLA.png');
@@ -172,8 +168,6 @@ body {
     background-size: cover;
   }
 }
-
-
 
 }
 
