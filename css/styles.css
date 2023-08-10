@@ -9,9 +9,16 @@ body {
   color: #fff;
 }
 
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
 .panelsinnapravlenia {
-  height: 100vw; /* Полная высота экрана */
   width: 80vh; /* 80% ширины экрана */
+  height: 100vw; /* Полная высота экрана */
   overflow: hidden;
   display: flex;
   flex-direction: row; /* Ориентация горизонтального слайдера */
@@ -25,6 +32,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center; /* Выравнивание по центру */
   transition: flex 0.7s cubic-bezier(0.38, -0.06, 0.7, -0.11);
   text-shadow: 1px 1px 1px #000, -1px 1px 1px #000, 1px -1px 1px #000;
 }
@@ -40,14 +48,12 @@ body {
 }
 
 .panel .title {
-  flex: 3;
   font-family: raleway_f, sans-serif;
   font-size: 24px;
   text-transform: uppercase;
 }
 
 .panel .details {
-  flex: 3;
   font-family: raleway_f, sans-serif;
   font-size: 24px;
 }
@@ -63,7 +69,6 @@ body {
 }
 
 .panel > * {
-  flex: 1;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -112,7 +117,7 @@ body {
   background-position: center;
 }
 
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 1125px) {
   .panel.open .highlight { font-size: 30px; }
   .panel .sm-highlight { display: flex; }
   .panel .highlight.developer { display: none; }
@@ -154,7 +159,6 @@ body {
     background-position: center;
   }
 }
-
 }
 
 
