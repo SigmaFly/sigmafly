@@ -22,14 +22,17 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   transition: flex 0.7s cubic-bezier(0.38, -0.06, 0.7, -0.11);
   text-shadow: 1px 1px 1px #000, -1px 1px 1px #000, 1px -1px 1px #000;
+  transform: translateY(-300px); /* Начальное положение панели за экраном */
 }
 
 .panel .highlight {
   font-size: 36px;
   text-shadow: 1px 1px 1px #000, 2px 2px 1px #000;
   transition: font-size 0.7s cubic-bezier(0.38, -0.06, 0.7, -0.11);
+  writing-mode: horizontal-tb; /* Горизонтальный текст */
 }
 
 .panel .sm-highlight {
@@ -37,16 +40,16 @@ body {
 }
 
 .panel .title {
-  flex: 3;
   font-family: raleway_f, sans-serif;
   font-size: 24px;
   text-transform: uppercase;
+  writing-mode: horizontal-tb; /* Горизонтальный текст */
 }
 
 .panel .details {
-  flex: 3;
   font-family: raleway_f, sans-serif;
   font-size: 24px;
+  writing-mode: horizontal-tb; /* Горизонтальный текст */
 }
 
 .panel .details .item {
@@ -60,7 +63,6 @@ body {
 }
 
 .panel > * {
-  flex: 1;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -73,41 +75,46 @@ body {
 
 .panel.open {
   flex: 5;
-  transform: translateX(0); /* Добавлено */
+  transform: translateY(0); /* Положение панели во время открытия */
 }
 
 .panel.open .highlight {
   font-size: 44px;
 }
 
-.panel > *:first-child { transform: translateY(-300px); }
-.panel.active > *:first-child { transform: translateY(0); }
-.panel > *:last-child { transform: translateY(300px); }
-.panel.active > *:last-child { transform: translateY(0); }
+.panel > *:first-child { transform: translateX(-300px); }
+.panel.active > *:first-child { transform: translateX(0); }
+.panel > *:last-child { transform: translateX(300px); }
+.panel.active > *:last-child { transform: translateX(0); }
 
 .panel.one {
   background: #FDFFFF url('../img/BPLA.png');
   background-position: -100px 0;
+  background-size: cover;
 }
 
 .panel.two {
   background: #7B287D url('../img/TSP.png');
   background-position: center;
+  background-size: cover;
 }
 
 .panel.three {
   background: #D2FF28 url('../img/TakMed.png');
   background-position: center;
+  background-size: cover;
 }
 
 .panel.four {
   background: #FF7F11 url('../img/Nikita.png');
   background-position: center;
+  background-size: cover;
 }
 
 .panel.five {
   background: #FF1B1C url('../img/Eshelonirivanie.png');
   background-position: center;
+  background-size: cover;
 }
 
 @media screen and (max-width: 1080px) {
@@ -152,6 +159,7 @@ body {
     background-position: center;
   }
 }
+
 
 
 }
