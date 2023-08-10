@@ -7,29 +7,23 @@
 
 body {
   color: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
 }
 
 .panelsinnapravlenia {
-  width: 100vw;
-  height: 80vh;
+  height: 100vh;
+  width: 500%; /* Общая ширина для всех панелей */
+  overflow: hidden;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  transform: rotate(-90deg);
-  }
+  transition: transform 0.7s cubic-bezier(0.38, -0.06, 0.7, -0.11);
+}
 
 .panel {
   padding: 0 10px;
-  flex: 1;
+  width: 20%; /* Ширина одной панели в процентах */
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  transition: flex 0.7s cubic-bezier(0.38, -0.06, 0.7, -0.11);
   text-shadow: 1px 1px 1px #000, -1px 1px 1px #000, 1px -1px 1px #000;
 }
 
@@ -44,12 +38,14 @@ body {
 }
 
 .panel .title {
+  flex: 3;
   font-family: raleway_f, sans-serif;
   font-size: 24px;
   text-transform: uppercase;
 }
 
 .panel .details {
+  flex: 3;
   font-family: raleway_f, sans-serif;
   font-size: 24px;
 }
@@ -65,6 +61,7 @@ body {
 }
 
 .panel > * {
+  flex: 1;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -76,7 +73,7 @@ body {
 }
 
 .panel.open {
-  flex: 5;
+  width: 40%; /* Ширина открытой панели */
 }
 
 .panel.open .highlight {
@@ -89,32 +86,27 @@ body {
 .panel.active > *:last-child { transform: translateY(0); }
 
 .panel.one {
-  background: url('../img/BPLA.png') rotate(90deg);
-  background-size: cover;
-  background-position: center;
+  background: #FDFFFF url('../img/BPLA.png');
+  background-position: -100px 0;
 }
 
 .panel.two {
-  background: url('../img/TSP.png') rotate(90deg);
-  background-size: cover;
+  background: #7B287D url('../img/TSP.png');
   background-position: center;
 }
 
 .panel.three {
-  background: url('../img/TakMed.png') rotate(90deg);
-  background-size: cover;
+  background: #D2FF28 url('../img/TakMed.png');
   background-position: center;
 }
 
 .panel.four {
-  background: url('../img/Nikita.png') rotate(90deg);
-  background-size: cover;
+  background: #FF7F11 url('../img/Nikita.png');
   background-position: center;
 }
 
 .panel.five {
-  background: url('../img/Eshelonirivanie.png') rotate(90deg);
-  background-size: cover;
+  background: #FF1B1C url('../img/Eshelonirivanie.png');
   background-position: center;
 }
 
@@ -138,37 +130,28 @@ body {
 
 @media screen and (max-width: 780px) and (max-height: 500px){
   .panel.one {
-    background: url('/img/BPLA.png') rotate(90deg);
-    background-size: cover;
-    background-position: center;
+    background: #463785 url('/img/BPLA.png');
   }
 
   .panel.two {
-    background: url('/img/TSP.png') rotate(90deg);
-    background-size: cover;
+    background: #124559 url('/img/TSP.png');
     background-position: center;
   }
 
   .panel.three {
-    background: url('/img/TakMed.png') rotate(90deg);
-    background-size: cover;
+    background: #4A1942 url('/img/TakMed.png');
     background-position: center;
   }
 
   .panel.four {
-    background: url('/img/Nikita.png') rotate(90deg);
-    background-size: cover;
-    background-position: center;
+    background: #598392 url('/img/Nikita.png');
   }
 
   .panel.five {
-    background: url('/img/Eshelonirivanie.png') rotate(90deg);
-    background-size: cover;
+    background: #893168 url('/img/Eshelonirivanie.png');
     background-position: center;
   }
 }
-
-
 
 }
 
