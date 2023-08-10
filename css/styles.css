@@ -91,10 +91,10 @@ body {
   font-size: 28px;
 }
 
-.panel > *:first-child { transform: translateX(-300px); }
-.panel.active > *:first-child { transform: translateX(0); }
-.panel > *:last-child { transform: translateX(300px); }
-.panel.active > *:last-child { transform: translateX(0); }
+.panel > *:first-child { transform: translateY(-300px); }
+.panel.active > *:first-child { transform: translateY(0); }
+.panel > *:last-child { transform: translateY(300px); }
+.panel.active > *:last-child { transform: translateY(0); }
 
 .panel.one {
   background: #FDFFFF url('../img/BPLA.png');
