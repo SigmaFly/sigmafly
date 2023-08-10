@@ -1,158 +1,133 @@
 @media (max-width: 1125px) {
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
 
-body {
-  color: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  overflow: hidden;
-}
+  body {
+    color: #fff;
+    font-family: Arial, sans-serif;
+  }
 
-.panelsinnapravlenia {
-  width: 100vh;
-  height: 100vw;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  transform: rotate(90deg);
-  transform-origin: top left;
-}
-
-.panel {
-  padding: 0 10px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  transition: flex 0.7s cubic-bezier(0.38, -0.06, 0.7, -0.11), background-color 0.7s;
-  text-shadow: 1px 1px 1px #000, -1px 1px 1px #000, 1px -1px 1px #000;
-  width: 100vh;
-  height: 20vw;
-  writing-mode: horizontal-tb;
-  background-color: rgba(0, 0, 0, 0.95);
-}
-
-.panel .highlight {
-  font-size: 24px;
-  text-shadow: 1px 1px 1px #000, 2px 2px 1px #000;
-  transition: font-size 0.7s cubic-bezier(0.38, -0.06, 0.7, -0.11);
-}
-
-.panel .sm-highlight {
-  display: none;
-}
-
-.panel .title {
-  font-family: raleway_f, sans-serif;
-  font-size: 18px;
-  text-transform: uppercase;
-}
-
-.panel .details {
-  font-family: raleway_f, sans-serif;
-  font-size: 18px;
-}
-
-.panel .details .item {
-  list-style-type: none;
-  margin: 0px 0;
-}
-
-.panel .details .item a {
-  color: #fff;
-  text-decoration: none;
-}
-
-.panel > * {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  transition: transform .5s cubic-bezier(0.38, -0.06, 0.7, -0.11);
-}
-
-.panel:last-of-type .details {
-  text-align: center;
-}
-
-.panel.open {
-  flex: 5;
-  transform: translateY(0);
-}
-
-.panel.open .highlight {
-  font-size: 28px;
-}
-
-.panel > *:first-child { transform: translateY(-300px); }
-.panel.active > *:first-child { transform: translateY(0); }
-.panel > *:last-child { transform: translateY(300px); }
-.panel.active > *:last-child { transform: translateY(0); }
-
-.panel.one {
-  background: #FDFFFF url('../img/BPLA.png');
-  background-position: -100px 0;
-  background-size: cover;
-}
-
-.panel.two {
-  background: #7B287D url('../img/TSP.png');
-  background-position: center;
-  background-size: cover;
-}
-
-.panel.three {
-  background: #D2FF28 url('../img/TakMed.png');
-  background-position: center;
-  background-size: cover;
-}
-
-.panel.four {
-  background: #FF7F11 url('../img/Nikita.png');
-  background-position: center;
-  background-size: cover;
-}
-
-.panel.five {
-  background: #FF1B1C url('../img/Eshelonirivanie.png');
-  background-position: center;
-  background-size: cover;
-}
-
-@media screen and (max-width: 1125px) {
-  .panelsinnapravlenia {
-    transform: none;
+  .slider {
+    width: 100%;
+    display: flex;
+    overflow: hidden;
   }
 
   .panel {
-    width: 100%;
-    height: 20vw;
-    writing-mode: horizontal-tb;
-    transform: translateY(-300px);
+    height: 100vh;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: flex 0.7s cubic-bezier(0.38, -0.06, 0.7, -0.11);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
   }
 
-  .panel > *:first-child { transform: translateY(-300px); }
-  .panel.active > *:first-child { transform: translateY(0); }
-  .panel > *:last-child { transform: translateY(300px); }
-  .panel.active > *:last-child { transform: translateY(0); }
-
   .panel .highlight {
-    font-size: 16px;
+    font-size: 36px;
+    text-shadow: 1px 1px 1px #000, 2px 2px 1px #000;
+    transition: font-size 0.7s cubic-bezier(0.38, -0.06, 0.7, -0.11);
+  }
+
+  .panel .sm-highlight {
+    display: none;
   }
 
   .panel .title,
   .panel .details {
-    font-size: 12px;
+    font-size: 24px;
+    transition: transform 0.7s cubic-bezier(0.38, -0.06, 0.7, -0.11);
   }
-}
 
+  .panel.open {
+    flex: 5;
+  }
+
+  .panel.open .highlight {
+    font-size: 44px;
+  }
+
+  .panel.active > .title,
+  .panel.active > .details {
+    transform: translateY(0);
+  }
+
+  .panel > *:first-child {
+    transform: translateY(-300px);
+  }
+
+  .panel.active > *:first-child {
+    transform: translateY(0);
+  }
+
+  .panel > *:last-child {
+    transform: translateY(300px);
+  }
+
+  .panel.active > *:last-child {
+    transform: translateY(0);
+  }
+
+  .panel.one {
+    background-image: url('../img/BPLA.png');
+  }
+
+  .panel.two {
+    background-image: url('../img/TSP.png');
+  }
+
+  .panel.three {
+    background-image: url('../img/TakMed.png');
+  }
+
+  .panel.four {
+    background-image: url('../img/Nikita.png');
+  }
+
+  .panel.five {
+    background-image: url('../img/Eshelonirivanie.png');
+  }
+
+  @media screen and (max-width: 1125px) {
+    .panel .highlight,
+    .panel .title,
+    .panel .details {
+      font-size: 18px;
+    }
+
+    .panel.open .highlight {
+      font-size: 30px;
+    }
+  }
+
+  @media screen and (max-width: 780px), (max-height: 500px) {
+    .panel.one {
+      background-image: url('/img/BPLA.png');
+    }
+
+    .panel.two {
+      background-image: url('/img/TSP.png');
+    }
+
+    .panel.three {
+      background-image: url('/img/TakMed.png');
+    }
+
+    .panel.four {
+      background-image: url('/img/Nikita.png');
+    }
+
+    .panel.five {
+      background-image: url('/img/Eshelonirivanie.png');
+    }
+  }
 }
 
 
