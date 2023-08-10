@@ -20,8 +20,7 @@ body {
   align-items: center;
   justify-content: center;
   transform: rotate(-90deg);
-  transform-origin: center center;
-}
+  }
 
 .panel {
   padding: 0 10px;
