@@ -15,8 +15,8 @@ body {
 }
 
 .panelsinnapravlenia {
-  width: 80vh;
-  height: 100vw;
+  width: 100vw;
+  height: 80vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -33,7 +33,6 @@ body {
   justify-content: center;
   transition: flex 0.7s cubic-bezier(0.38, -0.06, 0.7, -0.11);
   text-shadow: 1px 1px 1px #000, -1px 1px 1px #000, 1px -1px 1px #000;
-  transform: rotate(90deg);
 }
 
 .panel .highlight {
