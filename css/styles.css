@@ -10,20 +10,19 @@ body {
 }
 
 .panelsinnapravlenia {
-  height: 100vh;
-  width: 500%; /* Общая ширина для всех панелей */
+  height: 80vh;
+  width: 100vw;
   overflow: hidden;
   display: flex;
-  transition: transform 0.7s cubic-bezier(0.38, -0.06, 0.7, -0.11);
 }
 
 .panel {
   padding: 0 10px;
-  width: 20%; /* Ширина одной панели в процентах */
+  flex: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  transition: flex 0.7s cubic-bezier(0.38, -0.06, 0.7, -0.11);
   text-shadow: 1px 1px 1px #000, -1px 1px 1px #000, 1px -1px 1px #000;
 }
 
@@ -73,7 +72,8 @@ body {
 }
 
 .panel.open {
-  width: 40%; /* Ширина открытой панели */
+  flex: 5;
+  transform: translateX(0); /* Добавлено */
 }
 
 .panel.open .highlight {
@@ -152,6 +152,7 @@ body {
     background-position: center;
   }
 }
+
 
 }
 
