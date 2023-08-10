@@ -11,14 +11,15 @@
   }
 
   .slider {
-    width: 100%;
+    width: 100vw;
+    height: 100vh;
     display: flex;
     overflow: hidden;
   }
 
   .panel {
-    height: 100vh;
-    flex: 1;
+    width: 100%;
+    height: 20%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -28,6 +29,11 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    opacity: 0.95;
+  }
+
+  .panel:hover {
+    opacity: 1;
   }
 
   .panel .highlight {
@@ -47,7 +53,7 @@
   }
 
   .panel.open {
-    flex: 5;
+    height: 50%;
   }
 
   .panel.open .highlight {
