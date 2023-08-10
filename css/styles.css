@@ -7,13 +7,21 @@
 
 body {
   color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
 }
 
 .panelsinnapravlenia {
-  height: 80vh;
-  width: 100vw;
-  overflow: hidden;
+  width: 100vh;
+  height: 100vw;
   display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: rotate(-90deg);
+  transform-origin: top left;
 }
 
 .panel {
@@ -25,14 +33,16 @@ body {
   justify-content: center;
   transition: flex 0.7s cubic-bezier(0.38, -0.06, 0.7, -0.11);
   text-shadow: 1px 1px 1px #000, -1px 1px 1px #000, 1px -1px 1px #000;
-  transform: translateY(-300px); /* Начальное положение панели за экраном */
+  transform: translateY(-100%);
+  width: 100%; /* Каждая панель занимает 100% ширины экрана */
+  height: 20vh; /* Каждая панель занимает 20% высоты экрана */
 }
 
 .panel .highlight {
   font-size: 36px;
   text-shadow: 1px 1px 1px #000, 2px 2px 1px #000;
   transition: font-size 0.7s cubic-bezier(0.38, -0.06, 0.7, -0.11);
-  writing-mode: horizontal-tb; /* Горизонтальный текст */
+  writing-mode: horizontal-tb;
 }
 
 .panel .sm-highlight {
@@ -43,13 +53,13 @@ body {
   font-family: raleway_f, sans-serif;
   font-size: 24px;
   text-transform: uppercase;
-  writing-mode: horizontal-tb; /* Горизонтальный текст */
+  writing-mode: horizontal-tb;
 }
 
 .panel .details {
   font-family: raleway_f, sans-serif;
   font-size: 24px;
-  writing-mode: horizontal-tb; /* Горизонтальный текст */
+  writing-mode: horizontal-tb;
 }
 
 .panel .details .item {
@@ -75,7 +85,7 @@ body {
 
 .panel.open {
   flex: 5;
-  transform: translateY(0); /* Положение панели во время открытия */
+  transform: translateY(0);
 }
 
 .panel.open .highlight {
@@ -143,11 +153,13 @@ body {
   .panel.two {
     background: #124559 url('/img/TSP.png');
     background-position: center;
+    background-size: cover;
   }
 
   .panel.three {
     background: #4A1942 url('/img/TakMed.png');
     background-position: center;
+    background-size: cover;
   }
 
   .panel.four {
@@ -157,6 +169,7 @@ body {
   .panel.five {
     background: #893168 url('/img/Eshelonirivanie.png');
     background-position: center;
+    background-size: cover;
   }
 }
 
