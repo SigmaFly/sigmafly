@@ -10,27 +10,27 @@ body {
 }
 
 .panelsinnapravlenia {
-  height: 100vh; /* Полная высота экрана */
-  width: 100%; /* Фиксированная ширина для вертикального слайдера */
+  height: 100vw; /* Полная высота экрана */
+  width: 80vh; /* 80% ширины экрана */
   overflow: hidden;
   display: flex;
-  flex-direction: column; /* Ориентация вертикального слайдера */
+  flex-direction: row; /* Ориентация горизонтального слайдера */
+  transform: rotate(-90deg); /* Поворот на 90 градусов против часовой стрелки */
+  transform-origin: top left; /* Изменение точки поворота */
 }
 
 .panel {
-  padding: 10px 0; /* Изменил padding для вертикального расположения */
+  padding: 0 10px;
   flex: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center; /* Добавил выравнивание по центру */
   transition: flex 0.7s cubic-bezier(0.38, -0.06, 0.7, -0.11);
   text-shadow: 1px 1px 1px #000, -1px 1px 1px #000, 1px -1px 1px #000;
-  transform: translateX(100%); /* Начальное положение за экраном */
 }
 
 .panel .highlight {
-  font-size: 6px;
+  font-size: 36px;
   text-shadow: 1px 1px 1px #000, 2px 2px 1px #000;
   transition: font-size 0.7s cubic-bezier(0.38, -0.06, 0.7, -0.11);
 }
@@ -42,14 +42,14 @@ body {
 .panel .title {
   flex: 3;
   font-family: raleway_f, sans-serif;
-  font-size: 4px;
+  font-size: 24px;
   text-transform: uppercase;
 }
 
 .panel .details {
   flex: 3;
   font-family: raleway_f, sans-serif;
-  font-size: 4px;
+  font-size: 24px;
 }
 
 .panel .details .item {
@@ -76,30 +76,29 @@ body {
 
 .panel.open {
   flex: 5;
-  transform: translateX(0); /* Положение панели во время открытия */
 }
 
 .panel.open .highlight {
-  font-size: 14px;
+  font-size: 44px;
 }
 
-.panel > *:first-child { transform: translateX(-300px); }
-.panel.active > *:first-child { transform: translateX(0); }
-.panel > *:last-child { transform: translateX(300px); }
-.panel.active > *:last-child { transform: translateX(0); }
+.panel > *:first-child { transform: translateY(-300px); }
+.panel.active > *:first-child { transform: translateY(0); }
+.panel > *:last-child { transform: translateY(300px); }
+.panel.active > *:last-child { transform: translateY(0); }
 
 .panel.one {
-  background: #FDFFFF url('../img/Nikita.png');
+  background: #FDFFFF url('../img/BPLA.png');
   background-position: -100px 0;
 }
 
 .panel.two {
-  background: #7B287D url('../img/Nikita.png');
+  background: #7B287D url('../img/TSP.png');
   background-position: center;
 }
 
 .panel.three {
-  background: #D2FF28 url('../img/Nikita.png');
+  background: #D2FF28 url('../img/TakMed.png');
   background-position: center;
 }
 
@@ -109,16 +108,16 @@ body {
 }
 
 .panel.five {
-  background: #FF1B1C url('../img/Nikita.png');
+  background: #FF1B1C url('../img/Eshelonirivanie.png');
   background-position: center;
 }
 
-@media screen and (max-width: 1125px) {
-  .panel.open .highlight { font-size: 10px; }
+@media screen and (max-width: 1080px) {
+  .panel.open .highlight { font-size: 30px; }
   .panel .sm-highlight { display: flex; }
   .panel .highlight.developer { display: none; }
   .panel .highlight {
-    font-size: 8px;
+    font-size: 18px;
     transition: font-size .7s cubic-bezier(0.38, -0.06, 0.7, -0.11);
   }
 
@@ -133,16 +132,16 @@ body {
 
 @media screen and (max-width: 780px) and (max-height: 500px){
   .panel.one {
-    background: #463785 url('/img/Nikita.png');
+    background: #463785 url('/img/BPLA.png');
   }
 
   .panel.two {
-    background: #124559 url('/img/Nikita.png');
+    background: #124559 url('/img/TSP.png');
     background-position: center;
   }
 
   .panel.three {
-    background: #4A1942 url('/img/Nikita.png');
+    background: #4A1942 url('/img/TakMed.png');
     background-position: center;
   }
 
@@ -151,7 +150,7 @@ body {
   }
 
   .panel.five {
-    background: #893168 url('/img/Nikita.png');
+    background: #893168 url('/img/Eshelonirivanie.png');
     background-position: center;
   }
 }
