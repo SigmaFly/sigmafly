@@ -10,8 +10,8 @@ body {
 }
 
 .panelsinnapravlenia {
-  height: 100vh; /* Полная высота экрана */
-  width: 20vw; /* Фиксированная ширина для вертикального слайдера */
+  height: 20vh; /* Полная высота экрана */
+  width: 100vw; /* Фиксированная ширина для вертикального слайдера */
   overflow: hidden;
   display: flex;
   flex-direction: column; /* Ориентация вертикального слайдера */
