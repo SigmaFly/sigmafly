@@ -46,6 +46,10 @@
     display: none;
   }
 
+.panel .title .item:not(:empty) {
+  display: none;
+}
+
  .panel .details .item:not(:empty) {
   display: none;
 }
