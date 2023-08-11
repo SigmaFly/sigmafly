@@ -46,7 +46,8 @@
     display: none;
   }
 
-.panel .title:empty {
+.panel .title::after {
+  content: "";
   display: none;
 }
 
