@@ -46,8 +46,7 @@
     display: none;
   }
 
-.panel .title::after {
-  content: "";
+.panel .title {
   display: none;
 }
 
