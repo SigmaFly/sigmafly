@@ -91,7 +91,7 @@
   }
 
   .panel.four {
-    background-image: url('../img/Nikita.png');
+    background-image: url('../img/ortofotoplan.png');
   }
 
   .panel.five {
@@ -122,7 +122,7 @@
     }
 
     .panel.four {
-      background-image: url('/img/Nikita.png');
+      background-image: url('/img/ortofotoplan.png');
     }
 
     .panel.five {
@@ -234,7 +234,7 @@ body {
 }
 
 .panel.four {
-  background: #FF7F11 url('../img/Nikita.png');
+  background: #FF7F11 url('../img/ortofotoplan.png');
   background-position: center;
 }
 
@@ -277,7 +277,7 @@ body {
   }
 
   .panel.four {
-    background: #598392 url('/img/Nikita.png');
+    background: #598392 url('/img/ortofotoplan.png');
   }
 
   .panel.five {
