@@ -1,5 +1,5 @@
 @media (max-width: 1125px) {
-* {
+  * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -15,6 +15,8 @@
     height: 100vh;
     display: flex;
     overflow: hidden;
+    flex-direction: column;
+    align-items: center;
   }
 
   .panel {
@@ -31,6 +33,40 @@
     background-position: center;
     opacity: 0.95;
     margin-bottom: 100px;
+    position: relative; /* Добавлено */
+  }
+
+  .panel::after {
+    content: attr(data-highlight-text); /* Используем значение атрибута data-highlight-text */
+    position: absolute;
+    bottom: -30px; /* Регулируйте отступ ниже панели */
+    left: 0;
+    right: 0;
+    text-align: center;
+    color: #fff; /* Цвет текста */
+    font-size: 14px; /* Размер текста */
+  }
+
+  .panel:hover {
+    opacity: 1;
+  }
+
+  .panel .highlight {
+    font-size: 36px;
+    text-shadow: 1px 1px 1px #000, 2px 2px 1px #000;
+    transition: font-size 0.7s cubic-bezier(0.38, -0.06, 0.7, -0.11);
+    position: relative; /* Добавлено */
+  }
+
+  .panel:hover .highlight::after {
+    content: attr(data-highlight-text); /* Используем значение атрибута data-highlight-text */
+    position: absolute;
+    bottom: -30px; /* Регулируйте отступ ниже панели */
+    left: 0;
+    right: 0;
+    text-align: center;
+    color: #fff; /* Цвет текста */
+    font-size: 14px; /* Размер текста */
   }
 
 .slider::after {
