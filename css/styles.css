@@ -33,6 +33,17 @@
     margin-bottom: 100px;
   }
 
+.panel::after {
+  content: "Текст между панелями"; /* Ваш текст */
+  position: absolute;
+  bottom: -20px; /* Выставите отрицательное значение, чтобы текст был ниже панели */
+  left: 0;
+  right: 0;
+  text-align: center;
+  color: #fff; /* Цвет текста */
+  font-size: 14px; /* Размер текста */
+}
+
   .panel:hover {
     opacity: 1;
   }
