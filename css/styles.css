@@ -7,7 +7,7 @@
 
   body {
     color: #fff;
-    font-family: Arial, sans-serif;
+    font-family: raleway_f, sans-serif;
   }
 
   .slider {
@@ -45,7 +45,7 @@
     text-align: center;
     color: #fff; /* Цвет текста */
     font-size: 14px; /* Размер текста */
-    font-family: Arial, sans-serif; /* Добавьте нужный шрифт здесь */
+    font-family: raleway_f, sans-serif; /* Добавьте нужный шрифт здесь */
   }
 
   .panel:hover {
@@ -68,7 +68,7 @@
     text-align: center;
     color: #fff; /* Цвет текста */
     font-size: 30px; /* Размер текста */
-    font-family: Arial, sans-serif; /* Добавьте нужный шрифт здесь */
+    font-family: raleway_f, sans-serif; /* Добавьте нужный шрифт здесь */
   }
 
 .slider::after {
