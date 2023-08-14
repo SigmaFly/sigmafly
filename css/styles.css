@@ -45,6 +45,7 @@
     text-align: center;
     color: #fff; /* Цвет текста */
     font-size: 14px; /* Размер текста */
+    font-family: Arial, sans-serif; /* Добавьте нужный шрифт здесь */
   }
 
   .panel:hover {
