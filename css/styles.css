@@ -39,7 +39,7 @@
   .panel::after {
     content: attr(data-highlight-text); /* Используем значение атрибута data-highlight-text */
     position: absolute;
-    bottom: -50px; /* Регулируйте отступ ниже панели */
+    bottom: -100px; /* Регулируйте отступ ниже панели */
     left: 0;
     right: 0;
     text-align: center;
